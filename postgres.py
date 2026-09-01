@@ -28,9 +28,9 @@ try:
     column_size = len(column_names) 
     for student in students:
         for index in range(0, column_size):
-            print(student[index], end="\t")
+            print(student[index], end='\t')
         print()
-
+    
 except psycopg2.Error as e:
     print("Database error:", e)
 
